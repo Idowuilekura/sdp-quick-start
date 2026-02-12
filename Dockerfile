@@ -16,4 +16,8 @@ COPY ./app/entrypoint.sh ./app/test.py ./app/pre_flight.py /opt/app/
 
 RUN chmod +x /opt/app/entrypoint.sh
 
+RUN useradd -ms /bin/bash sdpuser
+
+USER sdpuser
+
 CMD ["bash", "/opt/app/entrypoint.sh"]
