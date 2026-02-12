@@ -14,8 +14,8 @@ The repository includes:
 - Sample data containing `users_details` and `transaction_details` (located in the `data` folder)  
 - A working SDP Python pipeline example to help you get started (located in the `transformation` folder)  
 - A Spark configuration file configured for Apache Iceberg  
-- An SDP pipeline configuration file  
-
+- An SDP pipeline configuration file
+- A Docker file to build your custom and prepackaged SDP environment 
 ## How to Run
 
 Follow these steps to get started:
