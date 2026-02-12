@@ -1,0 +1,10 @@
+name: "my_docker_pipeline"
+storage: "file:///app/checkpoints" 
+database: userbase
+catalog: local
+libraries:
+  - glob:
+      include: transformations/**
+configuration:
+  spark.sql.shuffle.partitions: "1000"
+  

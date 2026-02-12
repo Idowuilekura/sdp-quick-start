@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  app:
+    image: sdpspark
+    # image: idowuilekura/spark4_one:latest 
+    container_name: sdpcont
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - ./app:/app
+      - ./app/conf:/opt/spark/conf
+    environment:
+      - ICEBERG_DATABASE_NAME=userbase
